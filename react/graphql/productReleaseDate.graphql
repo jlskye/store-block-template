@@ -1,5 +1,4 @@
-query productReleaseDate($slug: String){
-  product(slug: $slug) {
-    releaseDate
-  }
+type ProductList {
+  slug: String
+  liveUsers: Int
 }
