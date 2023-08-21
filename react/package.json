@@ -23,15 +23,16 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "apollo-client": "^2.5.1",
-    "eslint-config-vtex": "^15.0.2",
+    "eslint-config-prettier": "^8.8.0",
     "graphql": "^14.6.0",
-    "prettier": "^3.0.2",
+    "prettier": "^2.8.8",
+    "eslint": "^7.12.1",
     "typescript": "^5.1.6",
+    "vtex.catalog-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.catalog-graphql@1.102.3/public/@types/vtex.catalog-graphql",
     "vtex.countdown": "https://twworkspace--vtexsgdemostore.myvtex.com/_v/private/typings/linked/v1/vtex.countdown@0.0.1+build1686131100/public/@types/vtex.countdown",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
-    "vtex.catalog-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.catalog-graphql@1.102.3/public/@types/vtex.catalog-graphql",
     "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.4/public/@types/vtex.styleguide"
   }
 }
