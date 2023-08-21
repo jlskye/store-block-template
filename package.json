@@ -4,7 +4,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint --ext js,jsx,ts,tsx .",
-    "format": "prettier --write \"**/*.{ts,js,json}\""
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -25,8 +26,8 @@
     "eslint": "^7.12.1",
     "eslint-config-vtex": "^15.0.2",
     "eslint-config-vtex-react": "^6.2.1",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.1.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
   }
