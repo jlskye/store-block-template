@@ -22,13 +22,16 @@
     ]
   },
   "devDependencies": {
+    "@apollo/react-testing": "3",
     "@vtex/prettier-config": "^0.1.4",
+    "@vtex/test-tools": "^3.4.3",
     "eslint": "^7.12.1",
     "eslint-config-vtex": "^15.0.2",
     "eslint-config-vtex-react": "^6.2.1",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.0",
     "prettier": "^2.8.8",
+    "react-intl": "3",
     "typescript": "^5.1.6"
   }
 }
