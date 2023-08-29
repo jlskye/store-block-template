@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useCssHandles } from "vtex.css-handles";
-import { useProduct } from "vtex.product-context";
 import { useQuery } from "react-apollo";
 
 import { getTwoDaysFromNow, tick } from "./utils/time";
@@ -12,7 +11,6 @@ const DEFAULT_TARGET_DATE = getTwoDaysFromNow();
 const CSS_HANDLES = ["countdown"];
 
 const Countdown: StorefrontFunctionComponent = () => {
-  const productContextValue = useProduct();
   const { data, loading, error } = useQuery(productReleaseDate);
 
   const [timeRemaining, setTime] = useState<TimeSplit>({
@@ -22,7 +20,15 @@ const Countdown: StorefrontFunctionComponent = () => {
   });
 
   const handles = useCssHandles(CSS_HANDLES);
+  const results = data?.products as unknown as Array<{
+    authors: string;
+    cacheId: string;
+    id: string;
+    name: string;
+  }>;
 
+  // eslint-disable-next-line no-console
+  console.log(timeRemaining);
   tick(DEFAULT_TARGET_DATE, setTime);
   if (loading) {
     return (
@@ -42,9 +48,10 @@ const Countdown: StorefrontFunctionComponent = () => {
 
   return (
     <div className={`${handles.countdown} db tc`}>
-      <div>{productContextValue?.product?.productName}</div>
-      {data.category.id}
-      {`${timeRemaining.hours}:${timeRemaining.minutes}:${timeRemaining.seconds}`}
+      <p>hhhh</p>
+      {results?.map((product) => (
+        <div>{product.name}</div>
+      ))}
     </div>
   );
 };

@@ -1,40 +1,6 @@
 {
-  products {
-    brandId
-    brand
-    categoryId
-    categories
-    categoryTree {
-      id
-      name
-      titleTag
-    }
-    productId
-    productName
-    priceRange {
-      listPrice {
-        lowPrice
-        highPrice
-      }
-    }
-    items {
-      name
-      nameComplete
-      complementName
-      ean
-      measurementUnit
-      unitMultiplier
-      images {
-        imageUrl
-        imageText
-      }
-      referenceId {
-        Key
-        Value
-      }
-      videos {
-        videoUrl
-      }
-    }
+  products @context(provider: "vtex.graphql-example") {
+    id
+    name
   }
 }
